@@ -1,15 +1,15 @@
 // Edit these values to customize the game.
 const GAME_CONFIG = {
-  maxLeftSwipes: 6,
+  maxLeftSwipes: 5,
   profiles: [
     { name: "Doutzen Kroes", imageUrl: "doutzen.JPG", booze: "Vodka" },
+    { name: "Denisa", imageUrl: "denisa.jpg", booze: "Whiskey" },
     { name: "Zendaya", imageUrl: "zendeya.jpg", booze: "Tequila" },
-    { name: "Dua Lipa", imageUrl: "dua_lipa.jpg", booze: "Tequila" },
-    { name: "Scarlett Johansson", imageUrl: "scarlett.jpg", booze: "Whiskey" },
-    { name: "Taylor Swift", imageUrl: "taylor_swift.png", booze: "Gin" },
-    { name: "Rihanna", imageUrl: "rihanna.jpg", booze: "Coconut Rum" },
-    { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
-    { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
+    { name: "Lisette", imageUrl: "lisette.jpg", booze: "Tequila" },
+    { name: "Eva", imageUrl: "eva.png", booze: "Limoncello" },
+    { name: "Marise", imageUrl: "marise.jpg", booze: "Tequila" },
+    { name: "Ines", imageUrl: "ines.jpg", booze: "Dropshot" },
+    // { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
     { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" }
   ]
 };
@@ -44,8 +44,8 @@ const leftBtn = document.getElementById("leftBtn");
 const rightBtn = document.getElementById("rightBtn");
 
 function init() {
-  if (!Array.isArray(GAME_CONFIG.profiles) || GAME_CONFIG.profiles.length !== 9) {
-    throw new Error("GAME_CONFIG.profiles must contain exactly 9 items.");
+  if (!Array.isArray(GAME_CONFIG.profiles) || GAME_CONFIG.profiles.length !== 8) {
+    throw new Error("GAME_CONFIG.profiles must contain exactly 8 items.");
   }
 
   leftMaxEl.textContent = String(GAME_CONFIG.maxLeftSwipes);
