@@ -2,15 +2,15 @@
 const GAME_CONFIG = {
   maxLeftSwipes: 6,
   profiles: [
-    { name: "Doutzen Kroes", imageUrl: "images/doutzen.JPG", booze: "Vodka" },
-    { name: "Zendaya", imageUrl: "images/zendeya.jpg", booze: "Tequila" },
-    { name: "Dua Lipa", imageUrl: "images/dua_lipa.jpg", booze: "Tequila" },
-    { name: "Scarlett Johansson", imageUrl: "images/scarlett.jpg", booze: "Whiskey" },
-    { name: "Taylor Swift", imageUrl: "images/taylor_swift.png", booze: "Gin" },
-    { name: "Rihanna", imageUrl: "images/rihanna.jpg", booze: "Coconut Rum" },
-    { name: "Ezgi", imageUrl: "images/ezgi.jpeg", booze: "Raki" },
-    { name: "Ezgi", imageUrl: "images/ezgi.jpeg", booze: "Raki" },
-    { name: "Ezgi", imageUrl: "images/ezgi.jpeg", booze: "Raki" }
+    { name: "Doutzen Kroes", imageUrl: "doutzen.JPG", booze: "Vodka" },
+    { name: "Zendaya", imageUrl: "zendeya.jpg", booze: "Tequila" },
+    { name: "Dua Lipa", imageUrl: "dua_lipa.jpg", booze: "Tequila" },
+    { name: "Scarlett Johansson", imageUrl: "scarlett.jpg", booze: "Whiskey" },
+    { name: "Taylor Swift", imageUrl: "taylor_swift.png", booze: "Gin" },
+    { name: "Rihanna", imageUrl: "rihanna.jpg", booze: "Coconut Rum" },
+    { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
+    { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
+    { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" }
   ]
 };
 
