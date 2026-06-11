@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bumble</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="endScreen" class="end-screen" aria-hidden="true">
+      <div class="end-panel" role="dialog" aria-modal="true" aria-labelledby="endTitle">
+        <h2 id="endTitle">There are no more people in your vicinity.</h2>
+        <p>You matched <span id="endRightCount">0</span> times.</p>
+        <p>You missed <span id="endLeftCount">0</span> potential matches.</p>
+      </div>
+    </section>
+
+    <header class="topbar">
+      <h1>Bumble</h1>
+      <p>Swipe right = drink the assigned shot.</p>
+    </header>
+
+    <section class="status-row" aria-live="polite">
+      <div class="pill">Left swipes: <span id="leftCount">0</span>/<span id="leftMax">0</span></div>
+      <div class="pill">Right swipes: <span id="rightCount">0</span></div>
+      <div class="pill">Cards left: <span id="cardsLeft">0</span></div>
+    </section>
+
+    <section class="deck-wrap">
+      <article id="card" class="card" aria-label="Celebrity card">
+        <img id="cardImage" alt="Celebrity photo" />
+        <div class="card-gradient"></div>
+        <div class="card-info">
+          <h2 id="cardName">Loading...</h2>
+          <!-- <p id="cardBooze">Shot: -</p> -->
+        </div>
+      </article>
+
+      <div id="matchOverlay" class="match-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="matchTitle">
+        <div class="match-panel">
+          <button id="matchCloseBtn" class="match-close" type="button" aria-label="Close match message">Close</button>
+          <div id="matchTitle" class="match-badge">It's a Match!</div>
+          <p class="match-text">Take a shot of <span id="matchBooze">-</span></p>
+        </div>
+      </div>
+
+      <p id="feedback" class="feedback" aria-live="assertive"></p>
+    </section>
+
+    <section class="actions">
+      <button id="leftBtn" class="btn btn-left" type="button">Swipe Left</button>
+      <button id="rightBtn" class="btn btn-right" type="button">Swipe Right</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
