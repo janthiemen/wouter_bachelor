@@ -1,15 +1,16 @@
 // Edit these values to customize the game.
 const GAME_CONFIG = {
-  maxLeftSwipes: 5,
+  maxLeftSwipes: 7,
   profiles: [
     { name: "Doutzen Kroes", imageUrl: "doutzen.JPG", booze: "Vodka" },
+    { name: "Guido", imageUrl: "guido.jpg", booze: "Limoncello" },
     { name: "Denisa", imageUrl: "denisa.jpg", booze: "Whiskey" },
-    { name: "Zendaya", imageUrl: "zendeya.jpg", booze: "Tequila" },
+    { name: "Wouter", imageUrl: "wouter.jpeg", booze: "Smrekovec" },
+    { name: "Eva", imageUrl: "eva.jpg", booze: "Stroh rum" },
+    { name: "Laura", imageUrl: "laura.jpeg", booze: "Birnenbrand" },
     { name: "Lisette", imageUrl: "lisette.jpg", booze: "Tequila" },
-    { name: "Eva", imageUrl: "eva.png", booze: "Limoncello" },
-    { name: "Marise", imageUrl: "marise.jpg", booze: "Tequila" },
+    { name: "Marise", imageUrl: "marise.jpg", booze: "Witte rum" },
     { name: "Ines", imageUrl: "ines.jpg", booze: "Dropshot" },
-    // { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" },
     { name: "Ezgi", imageUrl: "ezgi.jpeg", booze: "Raki" }
   ]
 };
@@ -44,9 +45,9 @@ const leftBtn = document.getElementById("leftBtn");
 const rightBtn = document.getElementById("rightBtn");
 
 function init() {
-  if (!Array.isArray(GAME_CONFIG.profiles) || GAME_CONFIG.profiles.length !== 8) {
-    throw new Error("GAME_CONFIG.profiles must contain exactly 8 items.");
-  }
+//   if (!Array.isArray(GAME_CONFIG.profiles) || GAME_CONFIG.profiles.length !== 8) {
+//     throw new Error("GAME_CONFIG.profiles must contain exactly 8 items.");
+//   }
 
   leftMaxEl.textContent = String(GAME_CONFIG.maxLeftSwipes);
   renderCard();
